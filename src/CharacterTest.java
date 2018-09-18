@@ -15,4 +15,14 @@ class CharacterTest {
         assertEquals(character.getName(), characterName);
     }
 
+    @Test
+    public void alignmentTest() {
+        Character character = new Character();
+
+        character.setAlignment(Alignment.EVIL);
+        assertNotNull(character);
+        assertNotNull(character.getAlignment());
+        assertEquals(character.getAlignment(), Alignment.EVIL);
+    }
+
 }
